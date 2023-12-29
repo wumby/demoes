@@ -11,13 +11,13 @@ import org.springframework.boot.test.context.SpringBootTest;
 @SpringBootTest
 public class CourseTests {
 
-    @InjectMocks
+    @Autowired
     CourseRepo courseRepo;
 
     @Test
     public void findByIdTest(){
-        Course course = courseRepo.findById(10001L);
-        Assertions.assertEquals("hibernate",course.getName());
+        Course course = courseRepo.findById(10002L);
+        Assertions.assertEquals("sd",course.getName());
     }
 
 }
