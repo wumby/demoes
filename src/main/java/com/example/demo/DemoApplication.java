@@ -22,8 +22,7 @@ public class DemoApplication implements CommandLineRunner {
 
 	@Override
 	public void run(String... args) throws Exception {
-		Course course = repo.findById(10001L);
-		System.out.println(course.getId());
-		repo.deleteById(10001L);
+		repo.playWithEM();
+
 	}
 }
